@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --pos: random(100);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Press Start 2P', system-ui;
+    background: url(../asset/img/blastgalaxy-back.webp);
+    color: white;
+
+}
+
+.header > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-top: 20px;
+
+}
+
+.header > ul > li {
+    cursor: pointer;
+    margin: auto;
+}
+ 
+.header > ul > li > a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 15px;
+
+}
+
+.header > ul > li > a:hover {
+    text-shadow: 0px 0px 6px white;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.header > ul > li > a > img{
+    width: 200px;
+}
+
+.about-us {
+    margin-top: 850px;
+    margin-left: 150px;
+    margin-right: 150px;
+    letter-spacing: 1px;
+}
+
+.about-us > p{
+    margin-top: 15px;
+    max-width: 700px;
+}
+
+.our-games {
+    margin-top: 50px;
+    margin-left: 850px;
+    margin-right: 150px;
+    letter-spacing: 1px;
+    text-align: end;
+}
+
+.our-games > p{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.buttonToMoreGames {
+    border-radius: 50px;
+    padding: 20px 30px 20px 30px;
+    background: red;
+    box-shadow: 0px 0px 10px black;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.buttonToMoreGames:hover {
+    color: rgb(167, 167, 167);
+    background: rgb(252, 24, 24);
+}
+
+.footer > ul {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.footer > ul {
+    margin: 150px;
+}
+.footer > ul > li > a > img{
+    width: 200px;
+}
+
+.footer > ul > li > h3 {
+    margin-bottom: 10px;
+}
+
+.footer > ul > li > ul > p {
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.contact > a, span, i {
+    color: white;
+    text-decoration: none;
+}
+
+.contact {
+    display: flex;
+    gap: 30px;
+}
+
+.contanct-tekst {
+    transition: 0.3s;
+}
+
+.social-media > ul > li {
+    list-style: none;
+}
+
+.social-media > ul > li > a {
+    text-decoration: none;
+}
+
+.contanct-tekst:hover {
+    color: rgb(167, 167, 167);
+}
+
+.contact-footer > ul > li {
+    list-style: none;
+}
+
+.contact-footer > ul > li > a {
+    text-decoration: none;
+}
+
+.rocket {
+    animation: animate ease;
+    /* animation-delay: 10s; */
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+.rocket > img {
+    margin-left: 50%;
+    width: 50px;
+}
+
+@keyframes animate {
+    0% {
+        /* transform: translateX(--); */
+    } 1% {
+        transform: translateY(0)
+    } 99.90% {
+        transform: translateY(-2300px);
+    } 99.95% {
+        visibility: hidden;
+    } 100% {
+        transform: translateY(-2300px);
+    }
+}
